@@ -1,0 +1,30 @@
+libprocps3 procps
+insserv
+net-tools
+sysv-rc
+sysvinit-utils
+tzdata
+libklibc klibc-utils
+libudev1 initramfs-tools-bin busybox-initramfs initramfs-tools
+libpng12-0 libplymouth2 libpciaccess0 libdrm-intel1 libdrm-radeon1 libdrm2 plymouth
+mountall
+libjson-c2
+libjson0 upstart
+libdebconfclient0 base-passwd
+initscripts
+adduser
+cpio
+diffutils
+libasprintf0c2 gettext-base
+grep
+gzip
+hostname
+iproute2 ifupdown
+makedev
+libmount1 mount
+ncurses-base
+netbase
+readline-common
+tar
+ucf
+util-linux
