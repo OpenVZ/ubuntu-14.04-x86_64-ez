@@ -252,10 +252,12 @@ echo "# udev-static - creates static devices on /dev devtmpfs
 
 description    \"create static devices on /dev devtmpfs\"
 
-start on (started udev)
+start on startup
 
 task
 
 exec /bin/cp -ap /lib/udev/devices/* /dev/" > etc/init/udev-static.conf
+
+sed -i 's/start on startup/start on started udev-static/' etc/init/mountall.conf
 
 cd $MYDIR > /dev/null
