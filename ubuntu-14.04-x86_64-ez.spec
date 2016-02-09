@@ -150,5 +150,8 @@ done
 %files -f files.lst
 
 %changelog
+* Tue Feb  9 2016 Denis Silakov <dsilakov@virtuozzo.com> 7.0.0-3
+- Do not wait for udev in udev-static service
+
 * Wed Jun 17 2015 Konstantin Volckov <wolf@sw.ru> 7.0.0-1
 - Initial release
