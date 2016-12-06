@@ -51,7 +51,7 @@ Name: %templatename-%templatever-%templatearch-ez
 Group: Virtuozzo/Templates
 License: GPL
 Version: 7.0.0
-Release: 3%{?dist}
+Release: 4%{?dist}
 BuildRoot: %_tmppath/%name-root
 BuildArch: noarch
 Requires: %package_manager_pkg
@@ -150,6 +150,9 @@ done
 %files -f files.lst
 
 %changelog
+* Tue Dec  6 2016 Konstantin Volkov <wolf@virtuozzo.com> 7.0.0-4
+- Correct timezone update, see #PSBM-53189
+
 * Tue Feb  9 2016 Denis Silakov <dsilakov@virtuozzo.com> 7.0.0-3
 - Do not wait for udev in udev-static service
 
